@@ -1,5 +1,5 @@
 // Test ID: IIDSAT
-import { useFetcher, useFetchers, useLoaderData } from 'react-router-dom';
+import {  useFetchers, useLoaderData } from 'react-router-dom';
 
 import OrderItem from './OrderItem';
 
@@ -13,7 +13,7 @@ import { useEffect } from 'react';
 
 function Order() {
   const order = useLoaderData();
- const fetcher= useFetcher();
+ const fetcher= useFetchers();
  useEffect(function()
 {if(!fetcher.data && !fetcher.state==='idle')
   {
